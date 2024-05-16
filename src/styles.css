@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Munroe';
+    src: url('./Munro-2LYe.ttf');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'munroe';
+}
+
+:root {
+    --cyan-1: #1dd3b0;
+    --blue-light: #cdf7f6;
+    --blue-reg: #086375;
+    --purple: #3c1642;
+    --white: white;
+    --background-darkgray: #212832;
+    --background-lightgray: #2d333b;
+}
+
+header {
+    border-bottom: 2px dashed var(--background-darkgray);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-lightgray);
+}
+
+#content{
+    margin: 0 auto;
+    width: 90%;
+    border: 2px dashed var(--background-darkgray);
+    padding: 5%;
+    max-width: 965px;
+}
+
+#heading {
+    color: var(--white);
+    letter-spacing: 5px;
+    margin-bottom: 4%;
+}
+
+#description{
+    padding: 2%;
+}
+
+.section-text,
+.item-text {
+    color: var(--blue-light);
+    text-align: center;
+}
+
+.section-content {
+    border: 2px dashed var(--blue-light);
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+li {
+    color: var(--blue-light);
+    list-style: none;
+}
+
+button {
+    height: 35px;
+    width: 135px;
+    background: none;
+    border: 1px dashed var(--blue-light);
+    color: white;
+    border-radius: 10%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--blue-reg);
+}
+
+img {
+    width: 15%;
+    height: 15%;
+    max-height: 90px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+.item-text {
+    width: 60%;
+}
+
+.heading {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
